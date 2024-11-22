@@ -3,10 +3,10 @@ import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/kevinRushProfile.jpg";
 import { motion } from "framer-motion";
 
-const container = (delay) => ({
-  hidden: { x: -100, opacity: 0 },
+const buttonAnimation = (delay) => ({
+  hidden: { y: 20, opacity: 0 },
   visible: {
-    x: 0,
+    y: 0,
     opacity: 1,
     transition: { duration: 0.5, delay: delay },
   },
@@ -14,74 +14,84 @@ const container = (delay) => ({
 
 const Hero = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4 lg:mb-35">
-      <div className="flex flex-wrap">
-        <div className="w-full lg:w-3/5">
-          <div className="flex flex-col items-center lg:items-start">
+    <div className="pb-4 lg:mb-35">
+      <div className="flex flex-col items-center lg:flex-row lg:items-center">
+        {/* Left Content */}
+        <div className="w-full lg:w-3/5 mb-8 lg:mb-0">
+          <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
             <motion.h1
-              whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ once: false, amount: 0.5 }}
-              variants={container(0)}
-              initial="hidden"
-              animate="visible"
-              className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
+              initial={{ x: -50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.6 }}
+              className="pb-6 text-5xl lg:text-7xl font-medium tracking-tight"
             >
               Sujitha Srikanthan
             </motion.h1>
             <motion.span
-              whileInView={{ x: 0, opacity: 1 }}
-              variants={container(0.5)}
-              initial="hidden"
-              animate="visible"
-              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent"
+              initial={{ x: -50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="bg-gradient-to-r from-emerald-400 via-purple-500 to-indigo-500 bg-clip-text text-3xl lg:text-4xl font-medium tracking-tight text-transparent"
             >
-              Undergraduate at SLIIT
+              Final Year Undergraduate at SLIIT
             </motion.span>
             <motion.p
-              whileInView={{ x: 0, opacity: 1 }}
-              variants={container(1)}
-              initial="hidden"
-              animate="visible"
-              className="my-2 max-w-xl py-4 font-light tracking-tighter"
+              initial={{ x: -50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, delay: 0.4 }}
+              className="my-4 max-w-2xl py-4 font-light tracking-tight"
             >
               {HERO_CONTENT}
             </motion.p>
             {/* Buttons */}
-            <div className="flex flex-wrap gap-4 justify-center lg:justify-start mt-8 mb-8 lg:mt-12 lg:mb-0">
+            <div className="flex flex-wrap gap-4 justify-center mt-8">
               <motion.a
                 href="#contact"
-                variants={container(1.5)} // Adjusted delay for smoother effect
+                variants={buttonAnimation(0.6)}
                 initial="hidden"
                 animate="visible"
-                className="px-6 py-3 text-lg font-medium text-white bg-gradient-to-r from-pink-400 to-purple-600 rounded-lg hover:bg-gradient-to-l transition transform hover:scale-105"
+                whileHover={{
+                  scale: 1.1,
+                  background: "linear-gradient(to right, #34d399, #9333ea)",
+                }}
+                whileTap={{ scale: 0.95 }}
+                className="px-6 py-3 text-lg font-medium text-white bg-gradient-to-r from-emerald-400 to-purple-500 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out"
               >
                 Hire Me
               </motion.a>
               <motion.a
-                href="/assets/Sujitha_Srikanthan_CV.pdf" // Ensure the path is correct
+                href="https://drive.google.com/file/d/1AzymKRAf9ZF027p6cayT6O70K6l7904k/view?usp=sharing"
                 download
-                variants={container(1.7)} // Slight delay to create a staggered effect
+                variants={buttonAnimation(0.8)}
                 initial="hidden"
                 animate="visible"
-                className="px-6 py-3 text-lg font-medium text-white bg-gradient-to-r from-teal-400 to-cyan-600 rounded-lg hover:bg-gradient-to-l transition transform hover:scale-105"
+                whileHover={{
+                  scale: 1.1,
+                  background: "linear-gradient(to right, #0ea5e9, #6366f1)",
+                }}
+                whileTap={{ scale: 0.95 }}
+                className="px-6 py-3 text-lg font-medium text-white bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out"
               >
                 Download CV
               </motion.a>
             </div>
           </div>
         </div>
+
+        {/* Right Content */}
         <div className="w-full lg:w-2/5 lg:p-8">
-          <div className="flex justify-center mb-8 lg:mb-0">
-            {" "}
-            {/* Added margin-bottom for mobile spacing */}
-            <motion.img
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 1.2 }}
+          <motion.div
+            className="flex justify-center mb-8 lg:mb-0"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
+            <img
               src={profilePic}
               alt="Sujitha Srikanthan"
+              className="rounded-full shadow-lg w-64 lg:w-80 mb-10 lg:mb-0"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
