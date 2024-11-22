@@ -1,6 +1,6 @@
 import React from "react";
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/kevinRushProfile.jpg";
+import profilePic from "../assets/Sujitha.jpg";
 import { motion } from "framer-motion";
 
 const buttonAnimation = (delay) => ({
@@ -81,7 +81,7 @@ const Hero = () => {
         {/* Right Content */}
         <div className="w-full lg:w-2/5 lg:p-8">
           <motion.div
-            className="flex justify-center mb-8 lg:mb-0"
+            className="flex justify-center"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -89,7 +89,7 @@ const Hero = () => {
             <img
               src={profilePic}
               alt="Sujitha Srikanthan"
-              className="rounded-full shadow-lg w-64 lg:w-80 mb-10 lg:mb-0"
+              className="rounded-full shadow-lg w-64 lg:w-80 mt-5 lg:mt-0"
             />
           </motion.div>
         </div>
