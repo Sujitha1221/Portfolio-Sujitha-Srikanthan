@@ -3,6 +3,9 @@ import project2 from "../assets/projects/NASA API Project.png";
 import project3 from "../assets/projects/e-learning.jpg";
 import project4 from "../assets/projects/virtual try on.jpg";
 import project5 from "../assets/projects/customer care.png";
+import project6 from "../assets/projects/farming-app.png";
+import project7 from "../assets/projects/Med Pro.png";
+import project8 from "../assets/projects/procurement.webp";
 
 export const HERO_CONTENT = `Passionate about technology, problem-solving, and building impactful solutions for the future.`;
 
@@ -103,37 +106,39 @@ export const PROJECTS = [
       "https://github.com/Sujitha1221/Web-application-for-Online-Customer-Care-System",
   },
   {
-    title: "Eyewear Virtual Try-On Application",
-    image: project4,
+    title: "Farmer-Buyer Interaction and Product Sales Application",
+    image: project6,
     description:
-      "This application is designed for an eyewear shop, offering a virtual try-on feature that allows users to browse and select glasses, then use their device's camera to visualize how different styles look on them.",
-    technologies: ["React", "Tailwind CSS", "Python", "Node", "MongoDB"],
+      "This Flutter-based application is designed to facilitate seamless interactions between farmers and buyers. Farmers can effortlessly list their products for sale, while buyers have the opportunity to place bids and make purchases directly.",
+    technologies: ["Flutter", "dart"],
     type: "mobile",
-    github: "https://github.com/Sujitha1221/Eye-wear-shop",
+    github: "https://github.com/Sujitha1221/UEE-Farm-Connect",
   },
   {
-    title: "Eyewear Virtual Try-On Application",
-    image: project4,
+    title: "Health Services Booking and Medicine Purchase App",
+    image: project7,
     description:
-      "This application is designed for an eyewear shop, offering a virtual try-on feature that allows users to browse and select glasses, then use their device's camera to visualize how different styles look on them.",
-    technologies: ["React", "Tailwind CSS", "Python", "Node", "MongoDB"],
+      "This Android application is designed to provide a solution for the current economic crisis by offering users the ability to register and log in. It helps users book appointments with doctors, schedule lab tests, and purchase medicines, all from a single platform.",
+    technologies: ["Kotlin"],
     type: "mobile",
-    github: "https://github.com/Sujitha1221/Eye-wear-shop",
+    github:
+      "https://github.com/Sujitha1221/MedPro---Healthcare-mobile-application",
   },
   {
-    title: "Eyewear Virtual Try-On Application",
-    image: project4,
+    title: "Procurement Solution for the Construction Industry",
+    image: project8,
     description:
-      "This application is designed for an eyewear shop, offering a virtual try-on feature that allows users to browse and select glasses, then use their device's camera to visualize how different styles look on them.",
-    technologies: ["React", "Tailwind CSS", "Python", "Node", "MongoDB"],
+      "This solution includes a website for use by admins and procurement/accounting staff and a mobile app designed for site managers. The system streamlines procurement and accounting processes, enabling efficient data management and seamless communication between administrators and site managers.",
+    technologies: ["React", "Tailwind CSS", "Flutter", "Node", "MongoDB"],
     type: "mobile",
-    github: "https://github.com/Sujitha1221/Eye-wear-shop",
+    github:
+      "https://github.com/Sujitha1221/Procurement-for-construction-industry",
   },
 ];
 
 export const CONTACT = {
   address:
-    "30/36, 3/1, Charles Apartment, De Silva Cross Road, Kalubowila, Colombo.",
+    "30/36 M 3/1, Charles Apartment, De Silva Cross Road, Kalubowila, Colombo.",
   phoneNo: "+94 74 206 5382",
   email: "sujithasrikanthan@gmail.com",
 };
