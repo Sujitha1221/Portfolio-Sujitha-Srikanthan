@@ -60,7 +60,7 @@ const Hero = () => {
                 Hire Me
               </motion.a>
               <motion.a
-                href="https://drive.google.com/file/d/1AzymKRAf9ZF027p6cayT6O70K6l7904k/view?usp=sharing"
+                href="https://drive.google.com/file/d/1VSep64KlOzk09EZ4xhmJzRm48aVveWJK/view?usp=sharing"
                 download
                 variants={buttonAnimation(0.8)}
                 initial="hidden"
