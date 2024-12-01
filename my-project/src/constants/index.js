@@ -1,11 +1,11 @@
-import project1 from "../assets/projects/The-Ecommerce-Business-Model-Explained.jpg";
-import project2 from "../assets/projects/NASA API Project.png";
+import project1 from "../assets/projects/ecommerce marketing.webp";
+import project2 from "../assets/projects/nasa.webp";
 import project3 from "../assets/projects/e-learning.jpg";
-import project4 from "../assets/projects/virtual try on.jpg";
-import project5 from "../assets/projects/customer care.png";
-import project6 from "../assets/projects/farming-app.png";
-import project7 from "../assets/projects/Med Pro.png";
-import project8 from "../assets/projects/procurement.webp";
+import project4 from "../assets/projects/tryon-.gif";
+import project5 from "../assets/projects/customer service.jpg";
+import project6 from "../assets/projects/smart_farm.jpg";
+import project7 from "../assets/projects/health.avif";
+import project8 from "../assets/projects/procurement.jpg";
 
 export const HERO_CONTENT = `Passionate about technology, problem-solving, and building impactful solutions for the future.`;
 
@@ -45,7 +45,7 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "iCorner - e-Commerce Web and Mobile Application",
     image: project1,
     description:
       "A client-server e-commerce system with a web app for back-office functions and an Android app for customers. It includes product management, order processing, and customer account handling, using MongoDB for data storage and IIS for hosting.",
@@ -64,7 +64,7 @@ export const PROJECTS = [
     github: "https://github.com/Sujitha1221/NASA-API-Assignment",
   },
   {
-    title: "Education Platform with RESTful API and Secure User Management",
+    title: "LearnHub - e-Learning Platform",
     image: project3,
     description:
       "This project is an education platform that manages courses, user registration, payment enrolment, and notifications. It ensures secure authentication and authorization for user data protection and integrates SMS and email for communication.",
@@ -80,7 +80,7 @@ export const PROJECTS = [
       "https://github.com/Sujitha1221/Educational-Platform-for-Online-Learning",
   },
   {
-    title: "Eyewear Virtual Try-On Application",
+    title: "Solar Flare - Eyewear Virtual Try-On Application",
     image: project4,
     description:
       "This application is designed for an eyewear shop, offering a virtual try-on feature that allows users to browse and select glasses, then use their device's camera to visualize how different styles look on them.",
@@ -106,7 +106,8 @@ export const PROJECTS = [
       "https://github.com/Sujitha1221/Web-application-for-Online-Customer-Care-System",
   },
   {
-    title: "Farmer-Buyer Interaction and Product Sales Application",
+    title:
+      "Farm Connect - Farmer-Buyer Interaction and Product Sales Application",
     image: project6,
     description:
       "This Flutter-based application is designed to facilitate seamless interactions between farmers and buyers. Farmers can effortlessly list their products for sale, while buyers have the opportunity to place bids and make purchases directly.",
@@ -115,7 +116,7 @@ export const PROJECTS = [
     github: "https://github.com/Sujitha1221/UEE-Farm-Connect",
   },
   {
-    title: "Health Services Booking and Medicine Purchase App",
+    title: "MedPro - Healthcare Mobile Application",
     image: project7,
     description:
       "This Android application is designed to provide a solution for the current economic crisis by offering users the ability to register and log in. It helps users book appointments with doctors, schedule lab tests, and purchase medicines, all from a single platform.",
@@ -125,7 +126,8 @@ export const PROJECTS = [
       "https://github.com/Sujitha1221/MedPro---Healthcare-mobile-application",
   },
   {
-    title: "Procurement Solution for the Construction Industry",
+    title:
+      "Build Zone - Web and Mobile Applications for the Construction Industry",
     image: project8,
     description:
       "This solution includes a website for use by admins and procurement/accounting staff and a mobile app designed for site managers. The system streamlines procurement and accounting processes, enabling efficient data management and seamless communication between administrators and site managers.",

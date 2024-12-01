@@ -72,7 +72,7 @@ const Education = () => {
           transition={{ duration: 1 }}
           className="w-full lg:w-1/4 text-neutral-400"
         >
-          <p className="mb-2 text-sm">2017</p>
+          <p className="mb-2 text-sm">2016 - 2017</p>
         </motion.div>
         <motion.div
           whileInView={{ x: 0, opacity: 1 }}
