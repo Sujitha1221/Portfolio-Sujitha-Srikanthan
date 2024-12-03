@@ -31,10 +31,7 @@ const Hero = () => {
             >
               Sujitha Srikanthan
             </motion.h1>
-            <div
-              className="relative h-10 overflow-hidden"
-              style={{ width: "100%" }}
-            >
+            <div className="relative h-10 overflow-hidden w-full flex justify-center lg:justify-start">
               <AnimatePresence>
                 <motion.span
                   key={roles[roleIndex]}
@@ -43,12 +40,17 @@ const Hero = () => {
                   exit={{ y: "-100%" }}
                   transition={{ duration: 0.6 }}
                   className="absolute bg-gradient-to-r from-emerald-400 via-purple-500 to-indigo-500 bg-clip-text text-3xl lg:text-4xl font-medium tracking-tight text-transparent w-full text-center lg:text-left"
-                  style={{ whiteSpace: "nowrap" }}
+                  style={{
+                    whiteSpace: "nowrap",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                  }}
                 >
                   {roles[roleIndex]}
                 </motion.span>
               </AnimatePresence>
             </div>
+
             <motion.p
               initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
