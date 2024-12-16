@@ -31,7 +31,7 @@ const Hero = () => {
             >
               Sujitha Srikanthan
             </motion.h1>
-            <div className="relative h-10 overflow-hidden w-full flex justify-center lg:justify-start">
+            <div className="relative overflow-hidden w-full flex justify-center lg:justify-start h-20 lg:h-10">
               <AnimatePresence>
                 <motion.span
                   key={roles[roleIndex]}
@@ -41,7 +41,6 @@ const Hero = () => {
                   transition={{ duration: 0.6 }}
                   className="absolute bg-gradient-to-r from-emerald-400 via-purple-500 to-indigo-500 bg-clip-text text-3xl lg:text-4xl font-medium tracking-tight text-transparent w-full text-center lg:text-left"
                   style={{
-                    whiteSpace: "nowrap",
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                   }}
@@ -55,12 +54,12 @@ const Hero = () => {
               initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.4 }}
-              className="my-4 max-w-2xl py-4 font-light tracking-tight"
+              className="mt-0 lg:my-4 max-w-2xl py-4 font-light tracking-tight"
             >
               Passionate about technology and building impactful solutions.
             </motion.p>
             {/* Buttons */}
-            <div className="flex flex-wrap gap-4 justify-center mt-8">
+            <div className="flex flex-wrap gap-4 justify-center mt-4">
               <motion.a
                 href="#contact"
                 initial={{ opacity: 0, y: 20 }}

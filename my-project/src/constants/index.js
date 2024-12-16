@@ -17,7 +17,7 @@ export const EXPERIENCES = [
     year: "2024 February - Present",
     role: "Undergrdauate Trainee - Delivery - IFS Cloud Upgrade Support",
     company: "IFS R&D International (Pvt) Ltd.",
-    description: `Resolved over 50 customer cases across the Delivery vertical teams, ensuring smooth upgrades and addressing client concerns efficiently. I actively collaborated with team members using platforms like Azure and ServiceNow to streamline workflows and improve support outcomes. Additionally, I authored 8 comprehensive knowledge base articles to support team operations and provide long-term value to the organization.`,
+    description: `Experienced in managing database upgrade-related cases, lifecycle experience cases, build-place customer issues, and Oracle CPU patch merge tickets with a focus on customer satisfaction. Skilled in using tools like Azure Pipelines, ServiceNow, Jira, and IFS Project Explorer to resolve cases efficiently. Authored eight knowledge base articles to support team operations. Completed Software Engineer training in the Aurena framework, C#, .NET Framework, and PL/SQL, with hands-on experience in PL/SQL Developer and Developer Studio.`,
     technologies: [
       "Azure",
       "JIRA",
