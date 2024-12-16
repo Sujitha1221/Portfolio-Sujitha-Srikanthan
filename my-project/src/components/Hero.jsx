@@ -76,7 +76,7 @@ const Hero = () => {
                 Hire Me
               </motion.a>
               <motion.a
-                href="https://drive.google.com/file/d/1VSep64KlOzk09EZ4xhmJzRm48aVveWJK/view?usp=sharing"
+                href="https://drive.google.com/file/d/1p-LxcCP8ISBBWGkxUKeFmbb2BtpFPQZo/view?usp=sharing"
                 download
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
