@@ -1,21 +1,34 @@
 import project1 from "../assets/projects/ecommerce marketing.webp";
 import project2 from "../assets/projects/nasa.webp";
 import project3 from "../assets/projects/e-learning.jpg";
-import project4 from "../assets/projects/tryon-.gif";
+import project4 from "../assets/projects/eye-wear.jpg";
 import project5 from "../assets/projects/customer service.jpg";
 import project6 from "../assets/projects/smart_farm.jpg";
 import project7 from "../assets/projects/health.avif";
 import project8 from "../assets/projects/procurement.jpg";
+import project9 from "../assets/projects/quiz platform.jpg";
+import project10 from "../assets/projects/nature ar scene.jpg";
+import project11 from "../assets/projects/chatbot.jpg";
+import project12 from "../assets/projects/microservice.jpg";
+import project13 from "../assets/projects/phone shop.jpg";
 
 export const HERO_CONTENT = `Passionate about technology, problem-solving, and building impactful solutions for the future.`;
 
-export const ABOUT_TEXT_1 = `I am a passionate and driven final-year Software Engineering student at the Sri Lanka Institute of Information Technology (SLIIT). My academic journey has been centered around full-stack development, cloud integration, and software engineering principles. With a keen interest in technology, I have developed a solid foundation in programming languages and frameworks, including Java, Python, C#, React, Node.js, Flutter, and MongoDB.`;
-export const ABOUT_TEXT_2 = `I am constantly exploring new tools and technologies to enhance my skills and contribute to the development of innovative software solutions. My technical expertise includes web development, mobile app development, cloud technologies, and software engineering best practices. I am excited to bring my skills and knowledge into real-world projects that will challenge me and help me grow further in the software development field.`;
+export const ABOUT_TEXT_1 = `I'm a Software Engineer at IFS R&D International Pvt Ltd and a final-year Software Engineering student at the Sri Lanka Institute of Information Technology (SLIIT). My journey in tech has been fueled by a passion for building scalable, innovative, and impactful software solutions.`;
+export const ABOUT_TEXT_2 = `With a strong foundation in full-stack development, cloud integration, and software engineering best practices, I’ve gained hands-on experience with a diverse tech stack, including Java, Python, C#, React, Node.js, Flutter, and MongoDB. I enjoy solving real-world problems through technology and thrive in environments where I can continuously learn and grow.`;
+export const ABOUT_TEXT_3 = `Outside of my academic and professional work, I actively explore emerging tools and frameworks, always looking for new ways to improve code quality, performance, and user experience. I’m particularly interested in projects that push boundaries and allow me to collaborate with others to deliver meaningful solutions.`;
 
 export const EXPERIENCES = [
   {
-    year: "2024 February - Present",
-    role: "Undergrdauate Trainee - Delivery - IFS Cloud Upgrade Support",
+    year: "2025 June - Present",
+    role: "Software Engineer – Engineering, Construction & Infrastructure Team",
+    company: "IFS R&D International (Pvt) Ltd.",
+    description: `Recently joined the Engineering, Construction, and Infrastructure team at IFS R&D. Currently gaining domain knowledge and familiarizing with the development environment, frameworks, and processes involved in delivering industry-specific solutions. Working closely with senior engineers and leads to contribute to core feature development and long-term platform improvements.`,
+    technologies: ["IFS Cloud", "Aurena", "C#", ".NET", "PL/SQL"],
+  },
+  {
+    year: "2024 February - 2025 February",
+    role: "Undergraduate Trainee - Delivery - IFS Cloud Upgrade Support",
     company: "IFS R&D International (Pvt) Ltd.",
     description: `Experienced in managing database upgrade-related cases, lifecycle experience cases, build-place customer issues, and Oracle CPU patch merge tickets with a focus on customer satisfaction. Skilled in using tools like Azure Pipelines, ServiceNow, Jira, and IFS Project Explorer to resolve cases efficiently. Authored eight knowledge base articles to support team operations. Completed Software Engineer training in the Aurena framework, C#, .NET Framework, and PL/SQL, with hands-on experience in PL/SQL Developer and Developer Studio.`,
     technologies: [
@@ -45,6 +58,54 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    type: "web",
+    title: "LLM-Based Adaptive Quiz Platform for A/L Biology",
+    image: project9,
+    description: `A full-stack AI-powered quiz system tailored for A/L Biology students. It dynamically generates and adapts MCQs using LLMs, IRT, and RAG. Features include topic-based quizzes, performance analytics, semantic filtering to avoid duplicates, and AI-generated answer explanations to reinforce learning.`,
+    github:
+      "https://github.com/Sujitha1221/LLM-Based-Adaptive-Quiz-Platform-for-A-L-Biology",
+    technologies: [
+      "React.js",
+      "FastAPI",
+      "MongoDB",
+      "LLaMA 2",
+      "FAISS",
+      "Sentence Transformers",
+    ],
+  },
+  {
+    type: "web", // or "ai" or "education"
+    title: "CTSE Lecture Chatbot (Flan-T5 + RAG)",
+    image: project11,
+    description: `An academic chatbot for the CTSE (Current Trends in Software Engineering) module that answers both free-text and multiple-choice questions. Built using a Retrieval-Augmented Generation (RAG) approach powered by FAISS semantic search and Google's Flan-T5 Large model.`,
+    github: "https://github.com/Sujitha1221/CTSE-Lecture-Notes-Chatbot", // Replace with actual link
+    technologies: [
+      "Flan-T5 Large",
+      "Sentence Transformers",
+      "FAISS",
+      "PyMuPDF",
+      "python-pptx",
+    ],
+  },
+  {
+    type: "web",
+    title:
+      "Secure Cloud Deployment of a Node.js Microservice using Azure and Docker",
+    image: project12, // Replace with appropriate image variable
+    description: `A secure, containerized microservice for user authentication built using Node.js, Express, and MongoDB. It applies DevOps and DevSecOps best practices including JWT-based authentication, CI/CD pipelines via GitHub Actions, Docker containerization, and security scanning with Snyk. Deployed on Azure App Service.`,
+    github:
+      "https://github.com/Sujitha1221/CTSE-Assignment-1-User-Management-System",
+    technologies: [
+      "Node.js",
+      "Express",
+      "MongoDB Atlas",
+      "Docker",
+      "GitHub Actions",
+      "Azure App Service",
+      "Snyk",
+    ],
+  },
+  {
     title: "iCorner - e-Commerce Web and Mobile Application",
     image: project1,
     description:
@@ -62,6 +123,14 @@ export const PROJECTS = [
     technologies: ["React", "Tailwind CSS", "Mongo DB", "Node", "Express"],
     type: "web",
     github: "https://github.com/Sujitha1221/NASA-API-Assignment",
+  },
+  {
+    type: "web", // or "ar" if you want to create a new category
+    title: "Explore & Discover: Nature AR Scene",
+    image: project10, // Replace with a real image or placeholder
+    description: `A marker-based WebAR experience using A-Frame and AR.js. Each printed marker triggers a unique animated 3D nature scene with positional audio and interactions like flying butterflies, jumping frogs, and more. Ideal for immersive education or themed exhibitions.`,
+    github: "https://github.com/Sujitha1221/ar-nature-explorer", // Replace with your actual repo
+    technologies: ["A-Frame", "AR.js", "GLTF", "WebXR", "JavaScript"],
   },
   {
     title: "LearnHub - e-Learning Platform",
@@ -123,7 +192,7 @@ export const PROJECTS = [
     technologies: ["Kotlin"],
     type: "mobile",
     github:
-      "https://github.com/Sujitha1221/MedPro---Healthcare-mobile-application",
+      "https://github.com/Sujitha1221/MedPro-Healthcare-mobile-application",
   },
   {
     title:
@@ -135,6 +204,14 @@ export const PROJECTS = [
     type: "mobile",
     github:
       "https://github.com/Sujitha1221/Procurement-for-construction-industry",
+  },
+  {
+    type: "web",
+    title: "LuxuryX - e-Commerce Website and Web Application",
+    image: project13, // Replace with appropriate image reference
+    description: `A full-featured e-commerce platform built with the MERN stack. LuxuryX offers a web-based solution for managing employees, suppliers, products, customers, orders, deliveries, promotions, and finances. Designed for scalability and efficiency, it streamlines all major business operations through an integrated website and web application.`,
+    github: "https://github.com/Sujitha1221/ITP-Final-Project", // Replace with actual GitHub link
+    technologies: ["MongoDB", "Express", "React", "Node.js"],
   },
 ];
 

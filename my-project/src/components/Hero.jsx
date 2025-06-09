@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import profilePic from "../assets/Sujitha.jpg";
+import profilePic from "../assets/sujitha-square.png";
 
 const Hero = () => {
   const [roleIndex, setRoleIndex] = useState(0);
   const roles = [
+    "Software Engineer at IFS",
     "Final Year Undergraduate at SLIIT",
-    "Undergraduate Trainee at IFS",
     "Full Stack Developer",
   ];
 
@@ -18,20 +18,21 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="pb-4 lg:mb-35">
-      <div className="flex flex-col items-center lg:flex-row lg:items-center">
+    <div className="min-h-screen flex flex-col justify-center pb-10 lg:pb-32">
+      <div className="flex flex-col-reverse items-center justify-between lg:flex-row">
         {/* Left Content */}
-        <div className="w-full lg:w-3/5 mb-8 lg:mb-0">
+        <div className="w-full lg:w-3/5 mb-12 lg:mb-0 px-4">
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
             <motion.h1
               initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.6 }}
-              className="pb-6 text-5xl lg:text-7xl font-medium tracking-tight"
+              className="pb-6 text-5xl lg:text-7xl font-semibold tracking-tight leading-tight"
             >
               Sujitha Srikanthan
             </motion.h1>
-            <div className="relative overflow-hidden w-full flex justify-center lg:justify-start h-20 lg:h-10">
+
+            <div className="relative overflow-hidden w-full h-28 lg:h-12 flex justify-center lg:justify-start">
               <AnimatePresence>
                 <motion.span
                   key={roles[roleIndex]}
@@ -39,11 +40,7 @@ const Hero = () => {
                   animate={{ y: "0%" }}
                   exit={{ y: "-100%" }}
                   transition={{ duration: 0.6 }}
-                  className="absolute bg-gradient-to-r from-emerald-400 via-purple-500 to-indigo-500 bg-clip-text text-3xl lg:text-4xl font-medium tracking-tight text-transparent w-full text-center lg:text-left"
-                  style={{
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                  }}
+                  className="absolute bg-gradient-to-r from-emerald-400 via-purple-500 to-indigo-500 bg-clip-text text-transparent text-3xl lg:text-4xl font-medium tracking-tight w-full text-center lg:text-left"
                 >
                   {roles[roleIndex]}
                 </motion.span>
@@ -54,21 +51,19 @@ const Hero = () => {
               initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.4 }}
-              className="mt-0 lg:my-4 max-w-2xl py-4 font-light tracking-tight"
+              className="mt-4 max-w-2xl py-4 font-light tracking-tight text-neutral-300"
             >
-              Passionate about technology and building impactful solutions.
+              🚀 Driven by a passion for technology 💻 and a commitment to creating meaningful, impactful software solutions 🌍.
             </motion.p>
+
             {/* Buttons */}
-            <div className="flex flex-wrap gap-4 justify-center mt-4">
+            <div className="flex flex-wrap gap-4 justify-center lg:justify-start mt-6">
               <motion.a
                 href="#contact"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
-                whileHover={{
-                  scale: 1.1,
-                  background: "linear-gradient(to right, #34d399, #9333ea)",
-                }}
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-6 py-3 text-lg font-medium text-white bg-gradient-to-r from-emerald-400 to-purple-500 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out"
               >
@@ -80,10 +75,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.8 }}
-                whileHover={{
-                  scale: 1.1,
-                  background: "linear-gradient(to right, #0ea5e9, #6366f1)",
-                }}
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-6 py-3 text-lg font-medium text-white bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out"
               >
@@ -93,18 +85,17 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right Content */}
-        <div className="w-full lg:w-2/5 lg:p-8">
+        {/* Right Content - Profile Image */}
+        <div className="w-full lg:w-2/5 flex justify-center lg:justify-end px-4">
           <motion.div
-            className="flex justify-center"
-            initial={{ scale: 0.8, opacity: 0 }}
+            initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <img
               src={profilePic}
               alt="Sujitha Srikanthan"
-              className="rounded-full shadow-lg w-64 lg:w-80 mt-5 lg:mt-0"
+              className="rounded-full shadow-2xl w-64 h-64 lg:w-96 lg:h-96 object-cover border-4 border-neutral-800"
             />
           </motion.div>
         </div>

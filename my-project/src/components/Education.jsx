@@ -33,7 +33,7 @@ const Education = () => {
             B.Sc. (Hons) in Information Technology Specializing in Software
             Engineering - Sri Lanka Institute of Information Technology (SLIIT)
           </h6>
-          <p className="mb-4 text-neutral-400">CGPA: 3.56 | Y3S2 GPA: 3.58</p>
+          <p className="mb-4 text-neutral-400">CGPA: 3.55 | Y4S1 GPA: 3.35</p>
         </motion.div>
       </div>
 

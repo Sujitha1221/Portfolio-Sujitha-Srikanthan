@@ -1,11 +1,11 @@
 import React from "react";
-import { ABOUT_TEXT_1, ABOUT_TEXT_2 } from "../constants";
-import aboutImg from "../assets/Sujitha3.jpg";
+import { ABOUT_TEXT_1, ABOUT_TEXT_2, ABOUT_TEXT_3 } from "../constants";
+import aboutImg from "../assets/copy-1.jpg";
 import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div className="border-b border-neutral-900">
       <h2 className="my-10 text-center text-4xl">
         About <span className="text-neutral-500">Me</span>{" "}
       </h2>
@@ -33,6 +33,7 @@ const About = () => {
           <div className="flex flex-col justify-center lg:justify-start">
             <p className="my-2 max-w-xl py-2">{ABOUT_TEXT_1}</p>
             <p className="my-2 max-w-xl py-2">{ABOUT_TEXT_2}</p>
+            <p className="my-2 max-w-xl py-2">{ABOUT_TEXT_3}</p>
           </div>
         </motion.div>
       </div>
