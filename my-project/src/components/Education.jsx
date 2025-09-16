@@ -21,7 +21,7 @@ const Education = () => {
           transition={{ duration: 1 }}
           className="w-full lg:w-1/4 text-neutral-400"
         >
-          <p className="mb-2 text-sm">2021 July - Present</p>
+          <p className="mb-2 text-sm">2021 July - 2025 September</p>
         </motion.div>
         <motion.div
           whileInView={{ x: 0, opacity: 1 }}
@@ -33,7 +33,7 @@ const Education = () => {
             B.Sc. (Hons) in Information Technology Specializing in Software
             Engineering - Sri Lanka Institute of Information Technology (SLIIT)
           </h6>
-          <p className="mb-4 text-neutral-400">CGPA: 3.55 | Y4S1 GPA: 3.35</p>
+          <p className="mb-4 text-neutral-400">WGPA: 3.62</p>
         </motion.div>
       </div>
 

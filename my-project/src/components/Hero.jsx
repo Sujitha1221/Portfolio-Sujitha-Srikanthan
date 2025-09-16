@@ -6,7 +6,7 @@ const Hero = () => {
   const [roleIndex, setRoleIndex] = useState(0);
   const roles = [
     "Software Engineer at IFS",
-    "Final Year Undergraduate at SLIIT",
+    "Fresh Graduate from SLIIT",
     "Full Stack Developer",
   ];
 
@@ -51,7 +51,7 @@ const Hero = () => {
               initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.4 }}
-              className="mt-4 max-w-2xl py-4 font-light tracking-tight text-neutral-300"
+              className="max-w-2xl py-4 font-light tracking-tight text-neutral-300"
             >
               🚀 Driven by a passion for technology 💻 and a commitment to creating meaningful, impactful software solutions 🌍.
             </motion.p>
