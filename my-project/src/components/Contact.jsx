@@ -15,20 +15,14 @@ const Contact = () => {
       </motion.h2>
       <div className="text-center tracking-tighter">
         <motion.p
-          whileInView={{ x: 0, opacity: 1 }}
-          initial={{ x: -100, opacity: 0 }}
-          transition={{ duration: 1 }}
-          className="my-4"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+          className="text-neutral-400 text-center max-w-xl mx-auto mb-10"
         >
-          {CONTACT.address}
-        </motion.p>
-        <motion.p
-          whileInView={{ x: 0, opacity: 1 }}
-          initial={{ x: -100, opacity: 0 }}
-          transition={{ duration: 1 }}
-          className="my-4"
-        >
-          {CONTACT.phoneNo}
+          I'm currently open to freelance projects, collaborations, 
+    and exciting opportunities. If you have something in mind, 
+    let’s build it together.
         </motion.p>
         <motion.a
           whileInView={{ x: 0, opacity: 1 }}

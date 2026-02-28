@@ -216,8 +216,5 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address:
-    "30/36 M 3/1, Charles Apartment, De Silva Cross Road, Kalubowila, Colombo.",
-  phoneNo: "+94 74 206 5382",
-  email: "sujithasrikanthan@gmail.com",
+  email: "sujithasrikanthan@gmail.com"
 };
