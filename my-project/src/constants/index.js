@@ -23,7 +23,7 @@ export const EXPERIENCES = [
     year: "2025 June - Present",
     role: "Software Engineer – Engineering, Construction & Infrastructure Team",
     company: "IFS R&D International (Pvt) Ltd.",
-    description: `Recently joined the Engineering, Construction, and Infrastructure team at IFS R&D. Currently gaining domain knowledge and familiarizing with the development environment, frameworks, and processes involved in delivering industry-specific solutions. Working closely with senior engineers and leads to contribute to core feature development and long-term platform improvements.`,
+    description: `Actively building domain expertise while familiarizing with the development environment, frameworks, and delivery processes for industry-specific solutions. Collaborating closely with senior engineers and technical leads to contribute to core feature development and long-term platform enhancements.`,
     technologies: ["IFS Cloud", "Aurena", "C#", ".NET", "PL/SQL"],
   },
   {
