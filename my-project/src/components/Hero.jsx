@@ -6,8 +6,8 @@ const Hero = () => {
   const [roleIndex, setRoleIndex] = useState(0);
   const roles = [
     "Software Engineer at IFS",
-    "Fresh Graduate from SLIIT",
-    "Full Stack Developer",
+    "AI Enthusiast",
+    "Aspiring AI Engineer",
   ];
 
   useEffect(() => {
@@ -53,7 +53,7 @@ const Hero = () => {
               transition={{ duration: 1, delay: 0.4 }}
               className="max-w-2xl py-4 font-light tracking-tight text-neutral-300"
             >
-              🚀 Driven by a passion for technology 💻 and a commitment to creating meaningful, impactful software solutions 🌍.
+              🚀 Driven by a passion for technology 💻 and a commitment to creating meaningful, impactful software solutions 🌍
             </motion.p>
 
             {/* Buttons */}
@@ -70,7 +70,7 @@ const Hero = () => {
                 Hire Me
               </motion.a>
               <motion.a
-                href="https://drive.google.com/file/d/1IgDSc9vOzHsgm2LdvbdFOChf7IE8bbZR/view?usp=sharing"
+                href="https://drive.google.com/file/d/1hw42b6DEfNNyEmzFteYf-zSnmPCDOpLN/view?usp=sharing"
                 download
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}

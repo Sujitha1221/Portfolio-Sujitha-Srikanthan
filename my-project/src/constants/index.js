@@ -14,7 +14,7 @@ import project13 from "../assets/projects/phone shop.jpg";
 
 export const HERO_CONTENT = `Passionate about technology, problem-solving, and building impactful solutions for the future.`;
 
-export const ABOUT_TEXT_1 = `I'm a Software Engineer at IFS R&D International Pvt Ltd and a final-year Software Engineering student at the Sri Lanka Institute of Information Technology (SLIIT). My journey in tech has been fueled by a passion for building scalable, innovative, and impactful software solutions.`;
+export const ABOUT_TEXT_1 = `I'm a Software Engineer at IFS R&D International Pvt Ltd and a graduate at the Sri Lanka Institute of Information Technology (SLIIT). My journey in tech has been fueled by a passion for building scalable, innovative, and impactful software solutions.`;
 export const ABOUT_TEXT_2 = `With a strong foundation in full-stack development, cloud integration, and software engineering best practices, I’ve gained hands-on experience with a diverse tech stack, including Java, Python, C#, React, Node.js, Flutter, and MongoDB. I enjoy solving real-world problems through technology and thrive in environments where I can continuously learn and grow.`;
 export const ABOUT_TEXT_3 = `Outside of my academic and professional work, I actively explore emerging tools and frameworks, always looking for new ways to improve code quality, performance, and user experience. I’m particularly interested in projects that push boundaries and allow me to collaborate with others to deliver meaningful solutions.`;
 
@@ -23,7 +23,7 @@ export const EXPERIENCES = [
     year: "2025 June - Present",
     role: "Software Engineer – Engineering, Construction & Infrastructure Team",
     company: "IFS R&D International (Pvt) Ltd.",
-    description: `Actively building domain expertise while familiarizing with the development environment, frameworks, and delivery processes for industry-specific solutions. Collaborating closely with senior engineers and technical leads to contribute to core feature development and long-term platform enhancements.`,
+    description: `Investigating and resolving technical issues across IFS Cloud and IFS Applications, covering integrations, database operations, background processing, and reporting. I trace problems to their root cause using application logs and database diagnostics, reproduce defects, validate fixes, and work with development teams to improve product reliability. I also support enterprise customers in engineering and construction, and manufacturing, helping keep business-critical systems running smoothly.`,
     technologies: ["IFS Cloud", "Aurena", "C#", ".NET", "PL/SQL"],
   },
   {
